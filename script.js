@@ -3,12 +3,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
   function fahrenheitToCelsius() {
     var fahrenheit = document.getElementById("fahrenheit").value;
 
-    console.log(((fahrenheit - 32) * 5) / 9);
+    document.getElementById("celsius").value = (
+      ((fahrenheit - 32) * 5) /
+      9
+    ).toFixed(1);
   }
 
   function celsiusToFahrenheit() {
     var celsius = document.getElementById("celsius").value;
-    console.log((celsius * 9) / 5 + 32);
+    document.getElementById("fahrenheit").value = (
+      (celsius * 9) / 5 +
+      32
+    ).toFixed(1);
   }
 
   // event listeners

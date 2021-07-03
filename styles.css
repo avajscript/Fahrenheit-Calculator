@@ -5,17 +5,41 @@
 
 body {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
-table,
-th,
-td {
+div.container {
+  width: 500px;
+}
+
+table {
   border: 1px solid black;
   border-collapse: collapse;
+  width: 100%;
 }
-
+th {
+  border-bottom: 1px solid black;
+}
 th,
 td {
   text-align: center;
   padding: 8px;
+  font-size: 1.2em;
+}
+td {
+  background-color: #ede3e9;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  width: 50%;
+  text-align: center;
+  background-color: #e6e4ce;
+}
+
+button {
+  padding: 10px;
+  background-color: #e6e4ce;
 }
